@@ -111,6 +111,7 @@ public class MercuryDemo {
 	  @BeforeTest
 	  public void enterApplicationURL()
 	  {
+		  System.out.println("enterApplicationURL");
 		  driver.get("http://newtours.demoaut.com/mercurywelcome.php");
 		  System.out.println("Application URL is entered successfully");
 	  }
