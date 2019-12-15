@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="530" started-at="2019-12-13T08:21:50Z" finished-at="2019-12-13T08:21:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="530" started-at="2019-12-13T08:21:50Z" finished-at="2019-12-13T08:21:51Z">
+      <class name="com.model.MercuryDemo">
+        <test-method status="FAIL" signature="openBrowser()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="openBrowser" is-config="true" duration-ms="0" started-at="2019-12-13T13:50:37Z" finished-at="2019-12-13T13:50:37Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.model.MercuryDemo.openBrowser(MercuryDemo.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="SKIP" signature="enterApplicationURL()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="enterApplicationURL" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterApplicationURL -->
+        <test-method status="SKIP" signature="maximizeBrowser()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="maximizeBrowser" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeBrowser -->
+        <test-method status="SKIP" signature="loginwithValids1()[pri:1, instance:com.model.MercuryDemo@56f4468b]" name="loginwithValids1" duration-ms="31" started-at="2019-12-13T13:51:50Z" description="Verify that valid user able to login into Mercury Tours application by using valid username and password" finished-at="2019-12-13T13:51:50Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.model.MercuryDemo.openBrowser(MercuryDemo.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithValids1 -->
+        <test-method status="SKIP" signature="getAllCookies()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="getAllCookies" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCookies -->
+        <test-method status="SKIP" signature="captureScreenshot()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="captureScreenshot" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="SKIP" signature="getAllCookies()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="getAllCookies" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCookies -->
+        <test-method status="SKIP" signature="getAllCookies()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="getAllCookies" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCookies -->
+        <test-method status="SKIP" signature="loginwithValids2()[pri:2, instance:com.model.MercuryDemo@56f4468b]" name="loginwithValids2" duration-ms="0" started-at="2019-12-13T13:51:50Z" description="Verify that valid user able to login into Mercury Tours application by using valid username and password" finished-at="2019-12-13T13:51:50Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.model.MercuryDemo.openBrowser(MercuryDemo.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithValids2 -->
+        <test-method status="SKIP" signature="captureScreenshot()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="captureScreenshot" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:50Z" finished-at="2019-12-13T13:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="SKIP" signature="deleteAllCookies()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="deleteAllCookies" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:51Z" finished-at="2019-12-13T13:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllCookies -->
+        <test-method status="SKIP" signature="dbConnectionClosed()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="dbConnectionClosed" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:51Z" finished-at="2019-12-13T13:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnectionClosed -->
+        <test-method status="SKIP" signature="loginwithInValids()[pri:3, instance:com.model.MercuryDemo@56f4468b]" name="loginwithInValids" duration-ms="0" started-at="2019-12-13T13:51:51Z" description="Verify that invalid user not able to login into Mercury Tours application by using invalid username and password" finished-at="2019-12-13T13:51:51Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AISHWARYA-PC', ip: '192.168.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002CEB13+1501971]
+	Ordinal0 [0x0024F6D1+980689]
+	Ordinal0 [0x001D765F+489055]
+	Ordinal0 [0x0016F2F4+62196]
+	Ordinal0 [0x0016BCDA+48346]
+	Ordinal0 [0x00189800+169984]
+	Ordinal0 [0x0018942D+169005]
+	Ordinal0 [0x001878EB+162027]
+	Ordinal0 [0x00170AC7+68295]
+	Ordinal0 [0x00171B40+72512]
+	Ordinal0 [0x00171AD9+72409]
+	Ordinal0 [0x00268F37+1085239]
+	GetHandleVerifier [0x0036D7ED+503293]
+	GetHandleVerifier [0x0036D580+502672]
+	GetHandleVerifier [0x003746AC+531644]
+	GetHandleVerifier [0x0036DFFA+505354]
+	Ordinal0 [0x00260606+1050118]
+	Ordinal0 [0x0026047F+1049727]
+	Ordinal0 [0x0026AF9B+1093531]
+	Ordinal0 [0x0026B103+1093891]
+	Ordinal0 [0x0026A095+1089685]
+	BaseThreadInitThunk [0x763333CA+18]
+	RtlInitializeExceptionChain [0x77479ED2+99]
+	RtlInitializeExceptionChain [0x77479EA5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.model.MercuryDemo.openBrowser(MercuryDemo.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithInValids -->
+        <test-method status="SKIP" signature="captureScreenshot()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="captureScreenshot" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:51Z" finished-at="2019-12-13T13:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.model.MercuryDemo@56f4468b]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2019-12-13T13:51:52Z" finished-at="2019-12-13T13:51:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.model.MercuryDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
