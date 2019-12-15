@@ -91,6 +91,7 @@ public class MercuryDemo {
 	  @AfterMethod
 	  public void captureScreenshot() throws IOException
 	  {
+		   System.out.println("Screenshot is captured successfully");
 		  File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		  FileUtils.copyFileToDirectory(src, new File("C:\\Users\\Aishwarya\\workspace\\IntegrationofTestngUsingMv\\Screenshot\\"));
 	      System.out.println("Screenshot is captured successfully");
