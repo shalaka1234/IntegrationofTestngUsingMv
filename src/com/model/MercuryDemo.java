@@ -32,6 +32,7 @@ public class MercuryDemo {
 	  @Test(priority=1,description="Verify that valid user able to login into Mercury Tours application by using valid username and password")
 	  public void loginwithValids1() 
 	  {
+		 System.out.println("In loginwithValids1 method under Test");  
 	    System.out.println("In loginwithValids1 method under Test");
 	    driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("Suvidyap1");
 	    driver.findElement(By.xpath("//input[@name='password']")).sendKeys("P@ssword1");
